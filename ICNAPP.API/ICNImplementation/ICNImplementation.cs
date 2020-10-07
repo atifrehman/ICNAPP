@@ -121,7 +121,22 @@ namespace ICNAPP.API.ICNImplementation
             }
 
         }
+private void ForwardNACK(string interestName, string data, PITEntry pITEntry)
+        {
+            string fileName = ConfigurationHelper.ProcessDataFilePath+DateTime.Now.Ticks;
 
+            try
+            {
+                // TODO
+
+               
+            }
+            catch (Exception Ex)
+            {
+                Console.WriteLine(Ex.ToString());
+            }
+
+        }
         private void ForwardInterest(FIBEntry fIBEntry, string interestName)
         {
             string fileName = ConfigurationHelper.ProcessInterestFilePath + DateTime.Now.Ticks;
